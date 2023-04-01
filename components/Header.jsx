@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import Link from 'next/link';
 import { getCategories } from '../services';
 
@@ -15,9 +14,16 @@ const Header = () => {
   return (
     <div className="container mx-auto px-10 mb-8">
       <div className="border-b w-full inline-block border-blue-400 py-8">
-        <div className="md:float-left block">
+        <div className="flex md:float-left block">
+          <img
+            alt={"logo"}
+            height="35px"
+            width="35px"
+            className="align-middle rounded-full"
+            src={"/logo.png"}
+          />
           <Link href="/">
-            <span className="cursor-pointer font-bold text-4xl text-white">Graph CMS</span>
+            <span className="cursor-pointer font-bold text-3xl text-white">AI Bla Bla</span>
           </Link>
         </div>
         <div className="hidden md:float-left md:contents">
